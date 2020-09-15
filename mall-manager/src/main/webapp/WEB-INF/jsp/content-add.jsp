@@ -10,6 +10,7 @@
 	            <td>内容标题:</td>
 	            <td><input class="easyui-textbox" type="text" name="title" data-options="required:true" style="width: 280px;"></input></td>
 	        </tr>
+	        
 	        <tr>
 	            <td>内容子标题:</td>
 	            <td><input class="easyui-textbox" type="text" name="subTitle" style="width: 280px;"></input></td>
