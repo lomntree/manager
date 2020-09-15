@@ -1,0 +1,17 @@
+package org.ljw.service.impl;
+
+import java.util.List;
+
+import org.ljw.service.TbContentCategoryService;
+import org.ljw.service.TbItemCatService;
+import org.ljw.utils.EasyUITRreeNodeBean;
+
+public class TbContentCategoryServiceImpl implements TbContentCategoryService {
+
+	@Override
+	public List<EasyUITRreeNodeBean> getTbContentCategoryServiceImpl(long parentId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

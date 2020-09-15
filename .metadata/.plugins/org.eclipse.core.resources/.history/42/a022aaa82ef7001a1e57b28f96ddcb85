@@ -1,0 +1,77 @@
+package org.ljw.service.impl;
+
+import java.util.List;
+
+import org.ljw.mapper.TbContentCategoryMapper;
+import org.ljw.pojo.TbContentCategory;
+import org.ljw.pojo.TbContentCategoryExample;
+
+public class TbContentCategoryServiceImpl implements TbContentCategoryMapper {
+
+	@Override
+	public int countByExample(TbContentCategoryExample example) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int deleteByExample(TbContentCategoryExample example) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int deleteByPrimaryKey(Long id) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int insert(TbContentCategory record) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int insertSelective(TbContentCategory record) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<TbContentCategory> selectByExample(TbContentCategoryExample example) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public TbContentCategory selectByPrimaryKey(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int updateByExampleSelective(TbContentCategory record, TbContentCategoryExample example) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int updateByExample(TbContentCategory record, TbContentCategoryExample example) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int updateByPrimaryKeySelective(TbContentCategory record) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int updateByPrimaryKey(TbContentCategory record) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

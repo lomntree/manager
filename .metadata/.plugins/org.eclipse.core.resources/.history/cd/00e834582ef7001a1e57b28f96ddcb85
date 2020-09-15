@@ -1,0 +1,5 @@
+package org.ljw.service;
+import jave.util.List;
+public interface TbContentCategoryService {
+    List<EasyUITRreeNodeBean> getTbContentCategoryList(long parentId);
+}
