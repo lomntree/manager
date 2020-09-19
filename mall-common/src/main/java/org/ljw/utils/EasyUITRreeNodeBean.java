@@ -1,6 +1,17 @@
 package org.ljw.utils;
 
 public class EasyUITRreeNodeBean {
+	
+public EasyUITRreeNodeBean() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+public EasyUITRreeNodeBean(Long id, String text, String state) {
+		super();
+		this.id = id;
+		this.text = text;
+		this.state = state;
+	}
 private Long id;
 private String text;
 private String state;
