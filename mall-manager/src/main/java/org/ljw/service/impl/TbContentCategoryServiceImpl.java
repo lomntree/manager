@@ -29,6 +29,7 @@ public class TbContentCategoryServiceImpl implements TbContentCategoryService {
 		TbContentCategoryExample example =new TbContentCategoryExample();
 		Criteria createCriteria = example.createCriteria();
 		createCriteria.andParentIdEqualTo(parentId);
+		createCriteria.andStatusEqualTo(1);
 		List<TbContentCategory> selectByExample = tbContentCategoryMapper.selectByExample(example);
 		List<EasyUITRreeNodeBean> lists =new ArrayList<EasyUITRreeNodeBean>();
 		for (TbContentCategory tbContentCategory : selectByExample) {
@@ -64,4 +65,29 @@ public class TbContentCategoryServiceImpl implements TbContentCategoryService {
 	}
 	
    }
+   @Override
+   public FjnyResult updateNode(Long id,String name) {
+	   TbContentCategory contentCategory = tbContentCategoryMapper.selectByPrimaryKey(id);
+	   
+	   if(name != null && name.equals(contentCategory.getName())) {
+		   return FjnyResult.ok();
+	   }
+	   contentCategory.setName(name);
+	   contentCategory.setUpdated(new Date());
+	   tbContentCategoryMapper.updateByPrimaryKey(contentCategory);
+	   return FjnyResult.ok();
+   }
+   @Override
+   public FjnyResult deleteNode(Long id) {
+	   TbContentCategory contentCategory = tbContentCategoryMapper.selectByPrimaryKey(id);
+	   contentCategory.setStatus(2);  
+	   tbContentCategoryMapper.updateByPrimaryKey(contentCategory);
+		/*
+		 * if(contentCategory.getIsParent()) { deleteNode(contentCategory.getId()); }
+		 */
+	   return FjnyResult.ok();
+   
+   }
+   
+   
 }
