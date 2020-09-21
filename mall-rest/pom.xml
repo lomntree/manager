@@ -113,7 +113,10 @@
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.2</version>
 				<configuration>
-					<port>8983</port>
+					<!--><port>8983</port><-->
+					<url>http://49.234.217.11:8080/manager/text</url>
+					<username>manager</username>
+					<password>Aa123456</password> 
 					<!-- <path>/</path> -->
 				</configuration>
 			</plugin>
